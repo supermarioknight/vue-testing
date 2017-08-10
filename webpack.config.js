@@ -8,9 +8,6 @@ module.exports = {
   output: {
     path: `${__dirname}/docs`,
     filename: '[name].js',
-    // NOTE: Public path needs to be prefixed with /yubaba when building
-    // for github docs. When running locally though, we need to remove it.
-    // Need to think up a better solution in the long run.
     publicPath: process.env.NODE_ENV === 'production' ? '/vuetest' : '/',
   },
   module: {
